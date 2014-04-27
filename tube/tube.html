@@ -15,10 +15,10 @@
 		<script type="text/javascript">
 		<!--
 			var config = {
-				width: 960, 
+				width: 960,
 				height: 600,
 				params: { enableDebugging:"0" }
-				
+
 			};
 			var u = new UnityObject2(config);
 
@@ -28,7 +28,7 @@
 				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
 				$missingScreen.hide();
 				$brokenScreen.hide();
-				
+
 				u.observeProgress(function (progress) {
 					switch(progress.pluginStatus) {
 						case "broken":
@@ -131,13 +131,13 @@
 				</div>
 			</div>
 		</div>
-        <p> Fill in pattern, under the time limit to rack up a score.</p>
-        <p><strong>Controls</strong></p>
-        <p>Right Arrow key: Turns on Horizontal Magnet</p>
-        <p>Left Arrow key: Turns off Horizontal Magnet</p>
-        <p>Down Arrow key: Turns on Vertical Magnet</p>
-        <p>Up Arrow key: Turns off Vertical Magnet</p>
-        <p>Space Key paints pixel</p>
+		<p>Draw the pattern using the Electron beam. You don't directly control the
+			beam, you have to use the magnets to control the direction of the beam
+		</p>
+		<p><strong>Controls</strong></p>
+		<p><strong>Left or Right arrow Key: </strong> Toggles the Horizontal Magnet</p>
+		<p><strong>Up or Down arrow Key: </strong> Toggles the Vertical Magnet</p>
+		<p><strong>Space: </strong> Paints the current pixel</p>
 		<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
 	</body>
 </html>
